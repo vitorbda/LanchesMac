@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Respositories\Interfaces\" />
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 

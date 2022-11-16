@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4xJ2Q08td2v/c+9xY99450M7bozJFhNhSYX6FmGbkYc=",
+  "Hash": "I0KY2mEzlC4her4pTX1hdAdhB+164IZ9O4saAug7uYs=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\img\\lanche1.jpg"
     },
     {
+      "Identity": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\img\\Lanche2.jpg",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "img/Lanche2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Lanche2.jpg"
+    },
+    {
       "Identity": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\img\\Lanche2.webp",
       "SourceId": "LanchesMac",
       "SourceType": "Discovered",
@@ -117,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Lanche2.webp"
+    },
+    {
+      "Identity": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\img\\Lanche3.jpg",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "img/Lanche3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Lanche3.jpg"
     },
     {
       "Identity": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\img\\Lanche3.webp",

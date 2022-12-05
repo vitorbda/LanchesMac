@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I0KY2mEzlC4her4pTX1hdAdhB+164IZ9O4saAug7uYs=",
+  "Hash": "OLJw+r0utLxZbuPuegP+YjnX0fi9eL8BxPeoGGLVW4M=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\img\\carrinho.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "img/carrinho.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\carrinho.png"
     },
     {
       "Identity": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\img\\lanche1.jpg",
@@ -168,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Lanche3.webp"
+    },
+    {
+      "Identity": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\img\\lixo.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "img/lixo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\lixo.png"
     },
     {
       "Identity": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\js\\site.js",

@@ -45,4 +45,11 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapControllerRoute(
+    name: "CategoriaFiltro",
+    pattern: "Lanche/{action}/{categoria?}",
+    defaults: new { Controller = "Lanche", action = "List" });
+
+
+
 app.Run();

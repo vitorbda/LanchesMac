@@ -30,9 +30,9 @@ namespace LanchesMac.Controllers
             return View(carrinhoCompraVM);
         }
 
-        public IActionResult AdicionarItemNoCarrinhoCompra(int lancheId)
+        public IActionResult AdicionarItemNoCarrinhoCompra(int Id)
         {
-            var lancheSelecionado = _lancheRepository.GetLancheById(lancheId);
+            var lancheSelecionado = _lancheRepository.GetLancheById(Id);
 
             if(lancheSelecionado != null)
             {

@@ -12,7 +12,7 @@ namespace LanchesMac.Components
             _categoriaRepository = categoriaRepository;
         }
 
-        public IViewComponentResult invoke()
+        public IViewComponentResult Invoke()
         {
             var categorias = _categoriaRepository.Categorias.OrderBy(c => c.CategoriaNome);
             return View(categorias);

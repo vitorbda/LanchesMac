@@ -1,27 +1,25 @@
 ﻿@model CarrinhoCompraViewModel
 
-<div class="container">
-    <div class="row">
-
-        <img src="~/img/carrinho.png" />
-
+<div class="Container">
+    <div class="row checkoutForm">
         <div>
-            <h4> Seu carrinho de compras </h4>
+            <h4> Seu carrinho de compras : </h4>
         </div>
 
         <table class="table table-bordered table-striped">
+
             <thead>
                 <tr>
                     <th>Quantidade</th>
                     <th>Lanche</th>
                     <th class="text-right">Preço</th>
                     <th class="text-right">Subtotal</th>
-                    <th></th>
                 </tr>
             </thead>
 
             <tbody>
-                @foreach(var item in Model.CarrinhoCompra.CarrinhoCompraItems){
+                @foreach (var item in Model.CarrinhoCompra.CarrinhoCompraItems)
+                {
                     <tr>
                         <td class="text-center">@item.Quantidade</td>
                         <td class="text-left">@item.Lanche.Nome</td>
@@ -33,7 +31,8 @@
 
                         <td class="text-center">
                             <a asp-controller="CarrinhoCompra" asp-action="RemoverItemDoCarrinhoCompra"
-                                asp-route-lancheId="@item.Lanche.Id"> <img src="~/img/lixo.png">
+                           asp-route-lancheId="@item.Lanche.Id">
+                                <img src="~/img/lixo.png" width="20px" height="20px" />
                             </a>
                         </td>
                     </tr>
@@ -49,12 +48,14 @@
             </tfoot>
         </table>
 
+
         <div class="text-right">
             <div class="btn-group">
                 <a class="btn btn-success" asp-controller="Pedido" asp-action="Checkout">Encerrar Pedido</a>
+                &nbsp;&nbsp;&nbsp;
                 <a class="btn btn-primary" asp-controller="Lanche" asp-action="List">Continuar Comprando</a>
             </div>
         </div>
-
+        <br />
     </div>
 </div>

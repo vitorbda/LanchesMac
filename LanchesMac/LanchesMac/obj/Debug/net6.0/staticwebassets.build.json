@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kahwqX+YKR9AUuI9oQnLAJmJ4grRUs6A3LCXhRh5In8=",
+  "Hash": "yfNFKx2lj8JfDjMJD9krCosVmPiGMrpyCJs9j9qRUn4=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -287,6 +287,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\phone-app-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\img\\remove.ico",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "img/remove.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\remove.ico"
     },
     {
       "Identity": "C:\\Users\\grx20\\Documents\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac\\wwwroot\\js\\site.js",

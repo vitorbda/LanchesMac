@@ -260,3 +260,10 @@ C:\Users\grx20\Documents\LanchesMac\LanchesMac\LanchesMac\LanchesMac\bin\Debug\n
 C:\Users\grx20\Documents\LanchesMac\LanchesMac\LanchesMac\LanchesMac\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\grx20\Documents\LanchesMac\LanchesMac\LanchesMac\LanchesMac\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\grx20\Documents\LanchesMac\LanchesMac\LanchesMac\LanchesMac\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\grx20\Documents\LanchesMac\LanchesMac\LanchesMac\LanchesMac\bin\Debug\net6.0\xunit.abstractions.dll
+C:\Users\grx20\Documents\LanchesMac\LanchesMac\LanchesMac\LanchesMac\bin\Debug\net6.0\xunit.core.dll
+C:\Users\grx20\Documents\LanchesMac\LanchesMac\LanchesMac\LanchesMac\obj\Debug\net6.0\staticwebassets\msbuild.LanchesMac.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\grx20\Documents\LanchesMac\LanchesMac\LanchesMac\LanchesMac\obj\Debug\net6.0\staticwebassets\msbuild.build.LanchesMac.props
+C:\Users\grx20\Documents\LanchesMac\LanchesMac\LanchesMac\LanchesMac\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LanchesMac.props
+C:\Users\grx20\Documents\LanchesMac\LanchesMac\LanchesMac\LanchesMac\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LanchesMac.props
+C:\Users\grx20\Documents\LanchesMac\LanchesMac\LanchesMac\LanchesMac\obj\Debug\net6.0\staticwebassets.pack.json

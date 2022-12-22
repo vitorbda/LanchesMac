@@ -60,7 +60,7 @@ namespace LanchesMac.Controllers
                 _carrinhoCompra.LimparCarrinho();
 
                 //Retorna a view com os dados do cliente e do pedido
-                return View("~/View/Pedido/CheckoutCompleto.cshtml", pedido);
+                return View("~/Views/Pedido/CheckoutCompleto.cshtml", pedido);
             }
             return View(pedido);
         }

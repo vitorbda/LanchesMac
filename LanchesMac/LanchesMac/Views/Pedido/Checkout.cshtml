@@ -2,7 +2,8 @@
 
 <h3>Você está a um passo de completar o seu pedido</h3>
 <hr />
-<form asp-action="Checkot" method="post" class="form" role="form">
+<form asp-action="Checkout" method="post" class="form" role="form">
+
     <div class="row">
         <div class="form-group col-md-6">
             <label asp-for="Nome" class="col-form-label"></label>
@@ -62,13 +63,9 @@
     <br />
 
     <div class="row">
-        <div class="form-group">
-            <input class="btn btn-success" type="submit" value="Concluir Pedido" />
-        </div>
+            <input class="btn btn-success col-md-6" type="submit" value="Concluir Pedido" />
         <br />
-        <div class="form-group">
-            <a class="btn btn-outline-info" asp-controller="CarrinhoCompra" asp-action="Index">Retornar ao carrinho</a>
-        </div>
+            <a class="btn btn-outline-info col-md-6" asp-controller="CarrinhoCompra" asp-action="Index">Retornar ao carrinho</a>
     </div>
 
 </form>

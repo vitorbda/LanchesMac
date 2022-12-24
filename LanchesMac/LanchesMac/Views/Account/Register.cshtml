@@ -1,0 +1,32 @@
+﻿@model LoginViewModel
+
+<div class="text-center container col-md-6">
+    <div class="col align-self-center">
+        <h4>Registrar usuário</h4>
+
+        <form asp-controller="Account" asp-action="Register" method="post">
+
+            <div class="row form-control">
+
+                <div class="row-sm-2">
+                    <label asp-for="UserName"></label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>                                       
+                
+              <div class="row-sm-2">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="row-sm-2 ">
+                    <input type="submit" class="btn btn-success" value="Registrar" />
+                </div>
+                
+            </div>
+
+        </form>
+
+    </div>
+</div>

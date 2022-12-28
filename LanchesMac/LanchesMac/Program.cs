@@ -2,8 +2,10 @@ using LanchesMac.Context;
 using LanchesMac.Models;
 using LanchesMac.Respositories;
 using LanchesMac.Respositories.Interfaces;
+using LanchesMac.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +31,7 @@ builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddTransient<IPedidoRepositoriy, PedidoRepository>();
 builder.Services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
+builder.Services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
 
 builder.Services.AddMemoryCache();
 builder.Services.AddSession();
@@ -39,7 +42,6 @@ builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
 
-
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -47,6 +49,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+SeedUserRoleInitial seed = new();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -59,7 +63,8 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
-
+seed.SeedRoles();
+seed.SeeUsers();
 
 app.MapControllerRoute(
   name: "areas",

@@ -14,7 +14,7 @@ namespace LanchesMac.Controllers
         {
             _lancheRepository = lancheRepository;
         }
-
+       
         public IActionResult Index()
         {
             var homeViewModel = new HomeViewModel

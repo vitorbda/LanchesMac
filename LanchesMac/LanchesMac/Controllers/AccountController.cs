@@ -36,10 +36,11 @@ namespace LanchesMac.Controllers
 
             if (user != null)
             {   //Procura a senha
-                var result = await _signInManager.PasswordSignInAsync(user, loginVM.Password, true, false);
+                var result = await _signInManager.PasswordSignInAsync(user, loginVM.Password, false, false);
 
                 if(result.Succeeded) //Se o usuário e senha estiverem corretos
                 {
+                    bool foi = _signInManager.IsSignedIn(User);
                     if (string.IsNullOrEmpty(loginVM.ReturnUrl)) //Se não tiver Url para voltar
                     {
                         return RedirectToAction("Index", "Home");
@@ -76,6 +77,15 @@ namespace LanchesMac.Controllers
                 }
             }
             return View(registroVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            HttpContext.Session.Clear();
+            HttpContext.User = null;
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

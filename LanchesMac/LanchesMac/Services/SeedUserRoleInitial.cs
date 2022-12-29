@@ -6,7 +6,7 @@ namespace LanchesMac.Services
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-
+          
         public SeedUserRoleInitial(RoleManager<IdentityRole> roleManager,
                                    UserManager<IdentityUser> userManager)
         {
@@ -16,12 +16,62 @@ namespace LanchesMac.Services
 
         public void SeedRoles()
         {
-            throw new NotImplementedException();
+            if (!_roleManager.RoleExistsAsync("Member").Result)
+            {
+                IdentityRole role = new IdentityRole();
+                role.Name = "Member";
+                role.NormalizedName = "MEMBER";
+                IdentityResult roleResult = _roleManager.CreateAsync(role).Result;
+            }
+
+            if (!_roleManager.RoleExistsAsync("Admin").Result)
+            {
+                IdentityRole role = new IdentityRole();
+                role.Name = "Admin";
+                role.NormalizedName = "ADMIN";
+                IdentityResult roleResult = _roleManager.CreateAsync(role).Result;
+            }
         }
 
         public void SeeUsers()
-        {
-            throw new NotImplementedException();
+        {            
+            if (_userManager.FindByEmailAsync("admin@localhost").Result == null)
+            {
+                IdentityUser user = new IdentityUser();
+                user.UserName = "admin@localhost";
+                user.Email = "admin@localhost";
+                user.NormalizedEmail = "ADMIN@LOCALHOST";
+                user.NormalizedUserName = "ADMIN@LOCALHOST";
+                user.EmailConfirmed = true;
+                user.LockoutEnabled = false;
+                user.SecurityStamp = Guid.NewGuid().ToString();
+
+                IdentityResult result = _userManager.CreateAsync(user, "Numsey#2022").Result;
+
+                if (result.Succeeded)
+                {
+                    _userManager.AddToRoleAsync(user, "Admin").Wait();
+                }
+            }
+
+            if (_userManager.FindByEmailAsync("usuario@localhost").Result == null)
+            {
+                IdentityUser user = new IdentityUser();
+                user.UserName = "usuario@localhost";
+                user.Email = "usuario@localhost";
+                user.NormalizedEmail = "USUARIO@LOCALHOST";
+                user.NormalizedUserName = "USUARIO@LOCALHOST";
+                user.EmailConfirmed = true;
+                user.LockoutEnabled = false;
+                user.SecurityStamp = Guid.NewGuid().ToString();
+
+                IdentityResult result = _userManager.CreateAsync(user, "Numsey#2022").Result;
+
+                if (result.Succeeded)
+                {
+                    _userManager.AddToRoleAsync(user, "Member").Wait();
+                }
+            }
         }
     }
 }

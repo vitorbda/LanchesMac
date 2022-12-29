@@ -26,6 +26,15 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.Password.RequiredUniqueChars = 0;
 });
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin",
+        politica =>
+        {
+            politica.RequireRole("Admin");
+        });
+});
+
 builder.Services.AddTransient<ILancheRepository, LancheRepository>();
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -41,6 +50,7 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+CriarPerfisUsuario(app);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -50,7 +60,6 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-SeedUserRoleInitial seed = new();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -62,9 +71,6 @@ app.UseSession();
 app.UseAuthentication();
 
 app.UseAuthorization();
-
-seed.SeedRoles();
-seed.SeeUsers();
 
 app.MapControllerRoute(
   name: "areas",
@@ -82,3 +88,14 @@ app.MapControllerRoute(
 
 
 app.Run();
+
+void CriarPerfisUsuario(WebApplication app)
+{
+    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+    using (var scope = scopedFactory.CreateScope())
+    {
+        var service = scope.ServiceProvider.GetService<ISeedUserRoleInitial>();
+        service.SeedRoles();
+        service.SeeUsers();        
+    }
+}
